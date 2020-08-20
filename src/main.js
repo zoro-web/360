@@ -3,6 +3,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+// 为了省时，引进一个el-dialog
+import { Dialog } from 'element-ui'
+Vue.component(Dialog.name, Dialog);
+import 'element-ui/lib/theme-chalk/index.css';
+
 Vue.config.productionTip = false
 
 new Vue({
